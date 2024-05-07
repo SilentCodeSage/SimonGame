@@ -117,5 +117,10 @@
         background: gray;
         color: yellow;
     }
+
+    .content{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
   
