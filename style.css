@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.box:active {
+    opacity: 0.8; /* Adjust the opacity value to control the dimming effect */
+}
+
+
+.blue{
+   background: blue;
+}
+
+.yellow{
+    background: yellow;
+}
+
+.green{
+    background: green;
+}
+
+.red{
+    background: red;
+}
+
+.content{
+    padding: 20px 50px;
+    width: 100%;
+}
+.containerr{
+    padding: 30px 50px;
+    height: 100vh;
+    background-image: url(/wp5842194.webp);
+}
+
+.header{
+    margin-bottom: 0px;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 60px;
+    color: #fff53f;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.row1, .row2{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 400px;
+    flex-basis: 10%;
+}
+
+.button-main{
+    display: flex;
+    justify-content: center;
+}
+
+.button-main button{
+    padding: 5px 50px;
+    font-size: 60px;
+    font-weight: 1000;
+    border-radius: 15px;
+    background: gray;
+    color: yellow;
+}
+
+.button-main:active{
+   opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+.box.animate {
+    animation: colorChange 1s;
+}
+
+@keyframes colorChange {
+    0% { background-color: inherit; } /* Start with the original color */
+    50% { background-color: #fff; } /* Change to a different color halfway through */
+    100% { background-color: inherit; } /* Revert back to the original color */
+}
+
+
+@media screen and (max-width: 600px) {
+    .row1, .row2 {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 30px;
+    }
+
+    .box{
+        height: 100px;
+        width: 100px;
+    }
+
+    .button-main button{
+        padding: 5px 20px;
+        font-size: 30px;
+        font-weight: 1000;
+        border-radius: 15px;
+        background: gray;
+        color: yellow;
+    }
+}
+  
